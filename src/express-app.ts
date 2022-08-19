@@ -1,16 +1,9 @@
-import { Express, NextFunction, Request, Response } from "express"
-import departments from "../src/data/departments.json";
+import { Express } from "express"
+import DepartmentController from "./controllers/DepartmentController";
 
 const expressApp = (app: Express) => {
 
-  app.get("/departments", async (req: Request, res: Response, next: NextFunction) => {
-
-    const data = departments.data;
-
-    return res.status(200).json({
-      data
-    })
-  });
+  DepartmentController(app);
 }
 
 export default expressApp;
