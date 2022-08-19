@@ -1,0 +1,144 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "Engineering",
+      "pic": "Alex",
+      "supervisor": "Rico",
+      "members": 12
+    },
+    {
+      "id": 1,
+      "name": "Product",
+      "pic": "Alex",
+      "supervisor": "Agus",
+      "members": 6
+    },
+    {
+      "id": 2,
+      "name": "Finance",
+      "pic": "Bobby",
+      "supervisor": "Suga",
+      "members": 4
+    },
+    {
+      "id": 3,
+      "name": "HR",
+      "pic": "Victor",
+      "supervisor": "Victor",
+      "members": 4
+    },
+    {
+      "id": 4,
+      "name": "Procurement",
+      "pic": "Bobby",
+      "supervisor": "Sinta",
+      "members": 8
+    },
+    {
+      "id": 5,
+      "name": "Marketing",
+      "pic": "Bobby",
+      "supervisor": "Celine",
+      "members": 9
+    },
+    {
+      "id": 6,
+      "name": "Design",
+      "pic": "Alex",
+      "supervisor": "Fawwaz",
+      "members": 4
+    },
+    {
+      "id": 7,
+      "name": "Safety",
+      "pic": "Alex",
+      "supervisor": "Sugeng",
+      "members": 8
+    },
+    {
+      "id": 8,
+      "name": "Operation",
+      "pic": "Tia",
+      "supervisor": "Arif",
+      "members": 8
+    },
+    {
+      "id": 9,
+      "name": "Sales",
+      "pic": "Tia",
+      "supervisor": "Evelyne",
+      "members": 6
+    },
+    {
+      "id": 10,
+      "name": "Purchasing",
+      "pic": "Tia",
+      "supervisor": "Dodi",
+      "members": 4
+    },
+    {
+      "id": 11,
+      "name": "Legal",
+      "pic": "Alex",
+      "supervisor": "Hotman",
+      "members": 4
+    },
+    {
+      "id": 12,
+      "name": "Risk Management",
+      "pic": "Bobby",
+      "supervisor": "Erlang",
+      "members": 8
+    },
+    {
+      "id": 13,
+      "name": "PMO",
+      "pic": "Alex",
+      "supervisor": "Adam",
+      "members": 4
+    },
+    {
+      "id": 14,
+      "name": "Investments",
+      "pic": "Tia",
+      "supervisor": "Widjaja",
+      "members": 9
+    },
+    {
+      "id": 15,
+      "name": "Quality Assurance",
+      "pic": "Bobby",
+      "supervisor": "Fakhri",
+      "members": 8
+    },
+    {
+      "id": 16,
+      "name": "Creative",
+      "pic": "Tia",
+      "supervisor": "Agnes",
+      "members": 8
+    },
+    {
+      "id": 17,
+      "name": "Advertisment",
+      "pic": "Tia",
+      "supervisor": "Theo",
+      "members": 3
+    },
+    {
+      "id": 18,
+      "name": "Security",
+      "pic": "Alex",
+      "supervisor": "Dono",
+      "members": 8
+    },
+    {
+      "id": 19,
+      "name": "Manufacture",
+      "pic": "Bobby",
+      "supervisor": "Joko",
+      "members": 8
+    }
+  ]
+}
