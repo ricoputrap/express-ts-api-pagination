@@ -6,4 +6,4 @@ type Department = {
   members: number;
 }
 
-export { Department }
+export default Department;
