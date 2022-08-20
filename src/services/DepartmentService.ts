@@ -8,14 +8,16 @@ class DepartmentService {
     if (filterTotal === 0)
       return departments.data.length;
 
-    let filteredDepartments: Department[] = this.getFilteredDepartments(filter);
+    const filteredDepartments: Department[] = this.getFilteredDepartments(filter);
     return filteredDepartments.length;
   }
 
-  public getDepartments(page: number, limit: number, filter: any): Department[] {
+  public getDepartments(page: number, limit: number, filter: DepartmentFilter): Department[] {
+    const filteredDepartments: Department[] = this.getFilteredDepartments(filter);
+
     const startIndex: number = (page - 1) * limit;
     const endIndex: number = startIndex + +limit;
-    const data = departments.data.slice(startIndex, endIndex);
+    const data = filteredDepartments.slice(startIndex, endIndex);
 
     return data
   }
