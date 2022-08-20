@@ -1,5 +1,9 @@
-import Department from "./department";
+import Department, { DepartmentFilter } from "./department";
 import Params from "./params";
 import { ResponseMultiple } from "./response";
 
-export { Department, Params, ResponseMultiple }
+export { 
+  Department, DepartmentFilter,
+  Params,
+  ResponseMultiple
+}

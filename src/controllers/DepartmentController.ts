@@ -1,6 +1,6 @@
 import { Express, Request, Response, NextFunction } from "express"
 import DepartmentService from "../services/DepartmentService";
-import { Department, Params, ResponseMultiple } from "../types";
+import { Department, DepartmentFilter, Params, ResponseMultiple } from "../types";
 
 const DepartmentController = (app: Express) => {
   const service = new DepartmentService();
@@ -10,15 +10,18 @@ const DepartmentController = (app: Express) => {
       const params: Params = req.query;
       const page = params["page"] || 1;
       const limit = params["limit"] || 5;
+      const filter: DepartmentFilter = params["filter"] 
+        ? JSON.parse(params["filter"])
+        : {};
       
-      const totalItems: number = service.getTotalDepartments();
+      const totalItems: number = service.getTotalDepartments(filter);
       const totalPages: number = Math.ceil(totalItems / limit);
 
       // page not found
       if (page > totalPages)
         throw new Error(`Page not found. Page ${page} is requested, only ${totalPages} pages are available.`);
       
-      const data: Department[] = service.getDepartments(page, limit);
+      const data: Department[] = service.getDepartments(page, limit, filter);
       const response: ResponseMultiple = { 
         data,
         totalItems,
